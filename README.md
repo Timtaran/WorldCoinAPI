@@ -12,3 +12,5 @@ wc.get_balance()
 ```python
 wc.get_url(amount=сумма, code=код оплаты, lock=заблокированность)
 ```
+Используются все символы из https://worldcoin.docs.apiary.io/.
+Если написано "amount", значит и тут "amount"/

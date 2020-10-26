@@ -10,7 +10,11 @@ wc.get_balance()
 ```
 Получение ссылки:
 ```python
-wc.get_url(amount=сумма, code=код оплаты, lock=заблокированность)
+wc.get_url(amount=сумма, code=код оплаты, lock=заблокированность изменения суммы)
+```
+Получение истории платежей:
+```python
+wc.get_history(filter=фильтр, count=число платежей, offset=смещение выборки)
 ```
 Используются все символы из https://worldcoin.docs.apiary.io/.
 Если написано "amount", значит и тут "amount"/

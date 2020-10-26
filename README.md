@@ -20,5 +20,10 @@ wc.get_history(filter=фильтр, count=число платежей, offset=с
 ```python
 wc.players_pay(to=кому отправить, amount=сумма, code=код оплаты)
 ```
+Получение списка игроков:
+```python
+wc.players_info(players=[список игровов])
+```
 Используются все символы из https://worldcoin.docs.apiary.io/.
-Если написано "amount", значит и тут "amount"/
+Если написано "amount", значит и тут "amount".
+Если не указан ID, то все будет работать с 549204433, то есть со мной, так что не забывайте вводить ID.

@@ -1,4 +1,7 @@
 # WorldCoinAPI
+Установка:
+Я не знаю как создать установку, так что просто перенесите файл рядом с кодом :)
+Если можете помочь - https://vk.com/timtaran_yt
 Инициализация:
 ```python
 from worldcoinapi import api

@@ -3,6 +3,10 @@
 ```cmd
 pip install worldcoinapi
 ```
+Обновление:
+```cmd
+pip install --upgrade worldcoinapi
+```
 Инициализация:
 ```python
 from worldcoinapi import api

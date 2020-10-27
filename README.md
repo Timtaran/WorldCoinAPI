@@ -24,7 +24,7 @@ wc.get_history(filter=фильтр, count=число платежей, offset=с
 ```python
 wc.players_pay(to=кому отправить, amount=сумма, code=код оплаты)
 ```
-Получение списка игроков:
+Получение информации об игроках в списке:
 ```python
 wc.players_info(players=[список игровов])
 ```

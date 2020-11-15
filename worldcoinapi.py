@@ -6,9 +6,9 @@ class api():
 	def get_balance(self):
 		data = {"action": "balance", "group_id": self.merchant_id, "token": self.token}
 		res = post('https://coin.world-coin-game.ru/server/api.php', json=data)
-		return res.text
+		return res.json()
 	def get_url(self, amount=1, code=777, lock=0):
-		return f'vk.com/app7614516#pay_{self.merchant_id}_{amount}_{code}_{lock}'
+		return f'https://vk.com/app7614516#pay_{self.merchant_id}_{amount}_{code}_{lock}'
 	def get_history(self, filter=0, count=5000, offset=0):
 		data = {
     "action": "history",
@@ -19,7 +19,7 @@ class api():
 	"offset": offset
 }
 		res = post('https://coin.world-coin-game.ru/server/api.php', json=data)
-		return res.text
+		return res.json()
 	def players_pay(self, to=549204433, amount=0.001, code=1):
 		data = {
     "action": "transaction",
@@ -30,7 +30,7 @@ class api():
     "code": code
 }
 		res = post('https://coin.world-coin-game.ru/server/api.php', json=data)
-		return res.text
+		return res.json()
 	def players_info(self, players=[549204433]):
 		data = {
     "action": "players",
@@ -39,4 +39,4 @@ class api():
     "players": players
 }
 		res = post('https://coin.world-coin-game.ru/server/api.php', json=data)
-		return res.text
+		return res.json()
